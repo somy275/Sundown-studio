@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sundown Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+    <meta http-equiv="X-XSS-Protection" content="1">
+    <link href="sundown.css" rel="stylesheet" />
+    <link href="locomotive-scroll.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[arial] bg-[#EFEAE3] overflow-x-hidden overflow-y-hidden bg-scroll relative">
+
+    <main class="bg-[#EFEAE3] relative z-[2]">
+        <img src=" " id="fixed-img"
+            class="h-[31vw] bg-slate-500 w-[26vw] fixed top-[20%] right-[25%] rounded-[17px] object-cover hidden cursor-pointer opacity-100"
+            alt="image">
+        <header class="w-screen relative overflow-y-visible overflow-x-clip h-fit" id="page1">
+            <nav class="w-screen h-[100px] pt-[25px] px-[3.5vw] flex justify-between items-center">
+                <img class="h-[60px] lg:h-[65px] relative lg:right-[12px]"
+                    src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
+                    alt="sundown" />
+                <div class="flex" id="right-nav">
+                    <div class="flex h-[44px] w-[110px] border-solid border-[1px] border-[#CCC7C0] rounded-3xl justify-around px-3 z-[10] items-center cursor-pointer sm:hidden"
+                        id="menu">
+                        <i class="ri-menu-line"></i>
+                        <i class="ri-close-line hidden text-xl"></i>
+                        <div id="menu-text">Menu</div>
+                    </div>
+                    <div class="bg-[#EFEAE3] max-h-[90vw] h-[0vw] cursor-pointer w-screen absolute right-0 top-0 flex flex-col items-center justify-center font-medium rounded-b-[35px] z-[9] transition-all duration-[400ms] ease-out sm:hidden"
+                        id="menu-options">
+                        <div class="relative top-10 space-y-10  hidden text-[4vw] sm:hidden" id="menu-options-text">
+                            <div class="hover:text-orange-400" id="work">
+                                <a href="https://www.sundown-studio.com/work">Work</a>
+                            </div>
+                            <div class="hover:text-orange-400" id="studio">
+                                <a href="https://www.sundown-studio.com/studio">Studio</a>
+                            </div>
+                            <div class="hover:text-orange-400" id="contat">
+                                <a href="https://www.sundown-studio.com/contact">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-black w-screen max-h-[100vh] h-[0vw] absolute top-0 left-0 z-[8] opacity-[0.4] transition-all duration-[400ms] delay-[150] ease-out sm:hidden"
+                        id="menu-shadow"></div>
+                    <div class="nav hidden sm:flex text-md font-medium relative">
+                        <a class="mx-1 border-solid border-[1px] border-[#CCC7C0] rounded-3xl cursor-pointer px-5 py-2 relative z-[3] hover:text-white overflow-hidden transition-all duration-100 ease-in-out before:rounded-3xl before:bg-black before:h-[0px] before:hover:h-[40px] before:hover:w-screen before:w-[0px] before:absolute before:bottom-0 before:left-0 before:z-[-1] before:transition-all before:duration-500 before:linear"
+                            href="https://www.sundown-studio.com/work">Work</a>
+                        <a class="mx-1 border-solid border-[1px] border-[#CCC7C0] rounded-3xl cursor-pointer px-5 py-2 relative z-[3] hover:text-white overflow-hidden transition-all duration-100 ease-in-out before:rounded-3xl before:bg-black before:h-[0px] before:hover:h-[40px] before:hover:w-screen before:w-[0px] before:absolute before:bottom-0 before:left-0 before:z-[-1] before:transition-all before:duration-500 before:linear"
+                            href="https://www.sundown-studio.com/studio">Studio</a>
+                        <a class="mx-1 border-solid border-[1px] border-[#CCC7C0] rounded-3xl cursor-pointer px-5 py-2 relative z-[3] hover:text-white overflow-hidden transition-all duration-100 ease-in-out before:rounded-3xl before:bg-black before:h-[0px] before:hover:h-[40px] before:hover:w-screen before:w-[0px] before:absolute before:bottom-0 before:left-0 before:z-[-1] before:transition-all before:duration-500 before:linear"
+                            href="https://www.sundown-studio.com/contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="home-content"
+                class="h-[440px] min-[479px]:h-[550px] md:h-[455px] lg:h-[47vw] relative xl:h-[44vw] w-screen flex flex-col-reverse md:flex-row md:items-end md:pb-14 justify-around md:justify-between mx-[20px] border-solid border-[#CCC7C0] border-b-2">
+                <div id="home-left-content"
+                    class="font-[700] text-[21px] lg:text-[1.75em] w-[300px] lg:w-[400px] lg:h-[3.75em] lg:pl-2 leading-[1] tracking-[-0.1vw] relative appear">
+                    Sundown is a multi-disciplinary studio focused on creating unique,
+                    end-to-end experiences and environments.
+                </div>
+                <div id="home-right-content"
+                    class="font-[700] max-[479px]:text-[63px] w-[93vw] md:w-[60vw] lg:w-[44vw] xl:w-[39vw] text-end min-[479px]:text-[98px] min-[479px]:mt-14 md:text-[112px] md:pr-14 lg:mr-[80px] lg:text-[12.7vw] xl:text-[11vw] mt-6 leading-[0.8] tracking-[-0.9vw]">
+                    SPACES<br />THAT<br />INSPIRE
+                </div>
+            </div>
+            <div id="hero-wrapper"
+                class="h-[80vw] w-[50vw] min-[479px]:top-[200px] md:top-[250px] lg:h-[70vw] lg:w-[60vw] absolute right-0 top-[180px] lg:top-[25vw] xl:top-[24vw]">
+                <div id="hero-shape1"
+                    class="bg-[#FE330A] h-[252px] w-[252px] md:h-[350px] md:w-[350px] lg:h-[40vw] lg:w-[40vw] rounded-full absolute left-[17vw] blur-[20px] z-[4] top-[370px] min-[479px]:top-[420px] md:top-[300px] xl:top-[20vw]">
+                </div>
+                <div id="hero-shape2"
+                    class="bg-[#FE330A] h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[40vw] lg:w-[40vw] z-[5] rounded-full absolute lg:left-6 top-[440px] min-[479px]:top-[480px] md:top-[350px] lg:top-[32vw] md:right-[110px] min-[479px]:right-[30px] blur-[20px] anime will-change-transform rotate-[10deg]">
+                </div>
+                <div id="hero-shape3"
+                    class="h-[350px] w-[500px] md:h-[400px] md:w-[600px] lg:h-[50vw] lg:w-[65vw] bg-gradient-to-br from-[#FE330A] to-[#FE5A19] from-70% to-30% rounded-full absolute top-[310px] lg:top-[14em] xl:top-[18vw] min-[479px]:top-[380px] md:top-[220px] min-[479px]:right-[-70px] md:right-[-80px] min-[479px]:rotate-[14deg] md:rotate-[8deg] right-[-150px] lg:right-0 lg:left-[130px] z-[5] blur-[20px] rotate-[15deg] animate mix-blend-normal will-change-transform">
+                </div>
+            </div>
+            <div id="home-hero-video-wrapper"
+                class="relative top-[40px] min-[479px]:top-[50px] max-w-[100vw] h-[120vw] min-[479px]:h-[55vw] flex justify-center">
+                <div id="home-hero-video" class="absolute z-[6] w-[100%] object-cover pl-[2.5vw] pr-[3.5vw]">
+                    <video loop muted autoplay
+                        class="h-[120vw] w-[100vw] rounded-[5vw] min-[479px]:rounded-[25px] object-cover min-[479px]:h-[55vw]">
+                        <source
+                            src="https://player.vimeo.com/progressive_redirect/playback/915350257/rendition/1080p/file.mp4?loc=external&signature=768f26c5396775e76c340cb808a897a724e78acb8231106dd94af9d732695176" />
+                    </video>
+                </div>
+            </div>
+        </header>
+        <section
+            class="flex items-center mt-[5em] min-[479px]:mt-[6em] h-[80px] md:h-[120px] lg:h-[11.8em] w-[screen] overflow-hidden relative xl:mt-[7em]">
+            <div id="home-marquee-wrapper"
+                class="flex overflow-hidden will-change-transform font-bold uppercase relative  sm:bottom-[0.1em] md:bottom-[-0.5em]">
+                <div id="marquee-wrapper1" class="flex items-center justify-center marquee">
+                    <div id="marquee-text1"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Experiences
+                    </div>
+                    <div id="marquee-icon1"
+                        class="h-[28px] md:h-[42px] lg:h-[3.75em] w-[28px] md:w-[42px] lg:w-[3.75em]  inline-block bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em]">
+                    </div>
+                    <div id="marquee-text2"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Content
+                    </div>
+                    <div id="marquee-icon2"
+                        class="h-[28px] md:h-[42px] lg:h-[3.75em] w-[28px] md:w-[42px] lg:w-[3.75em]  inline-block bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em]">
+                    </div>
+                    <div id="marquee-text3"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Environments
+                    </div>
+                    <div id="marquee-icon3"
+                        class="h-[28px] md:h-[42px] lg:h-[3.75em] w-[28px] md:w-[42px] lg:w-[3.75em]  bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em] inline-block">
+                    </div>
+                </div>
+                <div id="marquee-wrapper2" class="flex items-center justify-center marquee whitespace-nowrap">
+                    <div id="marquee-text4"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Experiences
+                    </div>
+                    <div id="marquee-icon4"
+                        class="h-[28px] md:h-[42px] lg:h-[3.75em] w-[28px] md:w-[42px] lg:w-[3.75em]  bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em] inline-block">
+                    </div>
+                    <div id="marquee-text5"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Content
+                    </div>
+                    <div id="marquee-icon5"
+                        class="h-[28px] md:h-[42px] lg:h-[3.75em] w-[28px] md:w-[42px] lg:w-[3.75em]  bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em] inline-block">
+                    </div>
+                    <div id="marquee-text6"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Environments
+                    </div>
+                    <div id="marquee-icon6"
+                        class="h-[28px] md:h-[42px] lg:h-[3.75em] w-[28px] md:w-[42px] lg:w-[3.75em]  bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em] inline-block">
+                    </div>
+                </div>
+                <div id="marquee-wrapper3"
+                    class="inline-block whitespace-nowrap h-[15vw] items-center justify-center animate-marquee">
+                    <div id="marquee-text7"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Experiences
+                    </div>
+                    <div id="marquee-icon7"
+                        class="h-[2em] md:h-[42px] md:w-[42px] lg:w-[3.75em] lg:h-[3.75em] w-[2em] bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em] inline-block">
+                    </div>
+                    <div id="marquee-text8"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Content
+                    </div>
+                    <div id="marquee-icon8"
+                        class="h-[2em] md:h-[42px] md:w-[42px] lg:w-[3.75em] lg:h-[3.75em] w-[2em] bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em] inline-block">
+                    </div>
+                    <div id="marquee-text9"
+                        class="text-[52.5px] min-[479px]:text-[56px] md:text-[84px] lg:text-[8.75em] inline-block whitespace-nowrap tracking-tighter">
+                        Environments
+                    </div>
+                    <div id="marquee-icon9"
+                        class="h-[2em] md:h-[42px] md:w-[42px] lg:w-[3.75em] lg:h-[3.75em] w-[2em] bg-[#fe330a] rounded-full mx-[0.75em] md:mx-[1em] inline-block">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page3"
+            class="overflow-x-hidden sm:overflow-visible w-screen h-fit mt-[5em] min-[479px]:mt-[6.75em] relative  lg:mt-[8.75em]"
+            data-scroll>
+            <div id="container"
+                class=" w-screen h-auto px-[1.25em] min-[479px]:px-[2em] flex flex-col md:flex-row md:pl-[3em] md:pr-[4.5em] lg:px-[5.625em] md:items-center lg:items-start md:gap-[7vw] lg:gap-[8vw]">
+                <div id="who_section_left" class=" z-[3] relative lg:z-[-1]">
+                    <h1
+                        class="min-[479px]:leading-[.9em] tracking-[-.07em] text-[1.90em] min-[479px]:text-[35px] font-[600] leading-[1em] md:text-[49px] lg:text-[3.55em] lg:w-fit xl:text-[4.6vw] md:leading-[1.001] md:w-[55vw]">
+                        We are a group of design-driven, goal-focused creators, producers, and designers who believe
+                        that the details make all the difference.</h1>
+                </div>
+                <div id="who_section_right"
+                    class="pt-[50px] lg:pt-[5vw] xl:pt-[6vw] w-[252px] lg:w-fit h-[372px] min-[479px]:h-[410px] min-[479px]:w-[308px] relative z-[3] lg:z-[-1] md:w-[21.2vw] md:h-[390px] lg:h-fit justify-between flex flex-col lg:gap-y-[3vw] xl:gap-y-[2vw]">
+                    <div id="who_img" class="xl:w-[21.35vw]">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb.webp"
+                            alt="image" loading="lazy"
+                            class="h-[168px] w-[252px] min-[479px]:h-[205px] min-[479px]:w-[308px] md:w-[22.7vw] xl:w-[21.35vw] xl:h-[15vw] md:h-[14.5vw] rounded-[7px] object-cover relative lg:w-fit lg:max-w-fit appear duration-[1ms] preserve_3d">
+                    </div>
+                    <div id="who_text" class="z-[2] relative">
+                        <p class="text-[14px] leading-[1.4] font-normal xl:text-[1.1vw]">We love to create,
+                            we love to
+                            solve, we love to collaborate, and we love to turn amazing
+                            ideas into reality. We’re here to partner with you through every step of the process and
+                            know that relationships are the most important things we build.</p>
+                    </div>
+                </div>
+                <div id="animation_wrapper"
+                    class=" absolute h-[480px] min-[479px]:h-[510px] md:w-[580px] md:h-[72vw] md:max-h-[72vw] lg:max-h-[32.8em] top-0 left-0 w-screen overflow-visible lg:w-[73vw] lg:h-[55vw]">
+                    <div id="animation"
+                        class="absolute h-[420px] ml-[5em] md:h-[55vw] md:mt-[19vw] min-[479px]:mt-[50px] w-screen md:w-[532px] mt-[70px] md:ml-[5vw] z-[2] lg:z-[-2]  min-[479px]:h-[480px] sm:h-[400px] sm:w-[540px] lg:w-[72vw] lg:h-[-webkit-fill-available] lg:max-h-[37em] lg:mt-[10vw]">
+                        <div id="animation_1"
+                            class="bg-[#fe330adf] rounded-full h-[293px] w-[293px] min-[479px]:h-[390px] md:h-[440px] md:w-[420px] min-[479px]:w-[390px] absolute right-[30vw] min-[479px]:right-[20vw]  sm:right-[12vw] min-[479px]:top-[80px] md:top-[10vw] lg:top-[7vw] lg:right-[12em]  top-[90px] lg:max-w-[32em] lg:max-h-[30.6em] translate z-[2] blur-[60px] lg:w-[45vw] lg:h-[42vw] xl:w-[40vw] xl:h-[38vw]">
+                        </div>
+                        <div id="animation_2"
+                            class="bg-[#fa8518] rounded-full h-[279px] w-[279px] min-[479px]:h-[375px] md:h-[390px] min-[479px]:w-[375px] md:w-[390px] lg:h-[40vw] lg:w-[42vw] lg:max-w-[32em] lg:max-h-[31em] absolute right-[27vw] min-[479px]:right-[17vw]  sm:right-[9vw] top-[20px] min-[479px]:top-[40px] md:top-[3vw] lg:top-[2vw] lg:right-[10em] z-[1] blur-[10px] skew xl:w-[38.1vw] xl:h-[38.1vw]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="featured_project-section" class=" h-[1285vw] min-[479px]:h-fit mt-[8em] w-screen relative">
+            <div id="featured_project-header"
+                class="w-screen h-[70px] flex pb-[3.2em] items-center px-[1.25em] min-[479px]:px-[2em] gap-x-[.5em] relative z-[3]">
+                <div id="red-dot" class="bg-[#fe330adf] rounded-full w-[.5em] h-[.5em]"></div>
+                <h2 id="featured-header-text" class="text-[.875rem]">FEATURED PROJECTS</h2>
+            </div>
+            <div id="featured-wrapper" class="h-fit w-screen">
+                <div id="featured-container"
+                    class="h-[1240vw] min-[479px]:h-fit w-screen px-[1.25em] min-[479px]:px-[2em] lg:px-0 flex flex-col lg:flex  justify-between min-[479px]:grid min-[479px]:grid-cols-2 min-[479px]:gap-x-[1em] md:gap-x-[2em] min-[479px]:gap-y-[3em] lg:gap-x-0 lg:gap-y-0 grid-rows-[repeat(2,minmax(0,auto))]">
+                    <div id="featured-item1"
+                        class="img w-fit h-fit lg:w-auto relative overflow-hidden before:bg-[#FF9831] before:z-[-1]  before:absolute before:top-0 before:h-[0px] before:hover:h-[15vw] before:w-screen before:transition-all before:duration-300 before:ease-in-out lg:before:flex before:hidden"
+                        data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%2520of%2520Nike_Soho_50th_SU22_FL1_6176-p-800.webp"
+                        data-link="https://www.sundown-studio.com/projects/nike-50th-anniversary">
+                        <a href="https://www.sundown-studio.com/projects/nike-50th-anniversary"
+                            class="relative flex flex-col lg:flex-row lg:justify-between lg:px-[2em] lg:py-[1.20em] ">
+                            <div id="featured-visual1-wrapper"
+                                class="h-[122vw] min-[479px]:h-[57vw] w-fit pb-[1.5em] lg:hidden">
+                                <div id="featured-visual1" class=" object-cover h-[114vw] min-[479px]:h-[53vw]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%2520of%2520Nike_Soho_50th_SU22_FL1_6176-p-800.webp"
+                                        class="h-[114vw] min-[479px]:h-[53vw] rounded-[1em] object-cover" loading="lazy"
+                                        alt="image">
+                                </div>
+                            </div>
+                            <div id="featured-item1-text" class="w-fit h-fit">
+                                <div id="item1-text"
+                                    class=" text-[1.7em] relative z-[-1] md:text-[35px] lg:text-[4vw] xl:text-[3.5vw] font-bold h-fit w-fit leading-[1.2] tracking-[-.03em]">
+                                    50th Anniversary</div>
+                            </div>
+                            <div id="featured-info1" class="pt-[.5em] inline-block w-fit lg:flex flex-col items-end">
+                                <div id="info-text1"
+                                    class="text-[.850em] md:text-[17px] lg:text-[.875em] leading-[1.4] font-[500] w-fit">
+                                    NIKE</div>
+                                <div id="info-text2"
+                                    class="text-[.875em] md:text-[17px] lg:text-[.875em] w-fit font-[100] leading-[1.3] text-[#71706fc0]">
+                                    Environment</div>
+                            </div>
+                        </a>
+                        <div id="featured-border1"
+                            class="border-solid lg:border-b-[1.5px] border-[#CCC7C0] relative z-[-1]"></div>
+                    </div>
+                    <div id="featured-item2"
+                        class="img w-fit h-fit lg:w-auto relative overflow-hidden before:bg-[#FF9831] before:z-[-1] before:absolute before:top-0 before:h-[0px] before:hover:h-[15vw] before:w-screen before:transition-all before:duration-300 before:ease-in-out lg:before:flex before:hidden"
+                        data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/6605770bec3c2abb85f2366c_Copy%20of%20Capezio-RAW.01_24_56_14.Still043.jpg"
+                        data-link="https://www.sundown-studio.com/projects/capezio-nyc-flagship">
+                        <a href="https://www.sundown-studio.com/projects/capezio-nyc-flagship"
+                            class="flex flex-col relative  lg:flex-row lg:justify-between lg:px-[2em] lg:py-[1.20em]">
+                            <div id="featured-visual2-wrapper"
+                                class="h-[122vw] min-[479px]:h-[57vw] w-fit pb-[1.5em] lg:hidden">
+                                <div id="featured-visual2" class=" object-cover h-[114vw] min-[479px]:h-[53vw]">
+                                    <div id="featured-visual2-video2"><video playsinline="" loop="" muted="" autoplay=""
+                                            data-wf-ignore="true" data-object-fit="cover"
+                                            class="h-[114vw] min-[479px]:h-[53vw] rounded-[1em] object-cover">
+                                            <source
+                                                src="https://player.vimeo.com/progressive_redirect/playback/928415131/rendition/1080p/file.mp4?loc=external&amp;signature=d9ca71058c660482d56381edb088fd94c5c6dc3dd2e03a7bdc1f431d2e25bd5c"
+                                                data-wf-ignore="true">
+                                        </video></div>
+                                </div>
+                            </div>
+                            <div id="featured-item2-text" class="w-[280px] min-[479px]:w-fit ">
+                                <div id="item2-text"
+                                    class=" text-[1.7em] relative z-[-1] md:text-[35px] lg:text-[4vw] xl:text-[3.5vw] font-bold w-fit h-fit leading-[1.2] tracking-[-.03em]">
+                                    Capezio NYC Flagship</div>
+                            </div>
+                            <div id="featured-info2" class="pt-[.5em] inline- w-fit lg:flex flex-col items-end">
+                                <div id="info2-text1"
+                                    class="text-[.850em] md:text-[17px] lg:text-[.875em] leading-[1.4] font-[500] w-fit">
+                                    Capezio</div>
+                                <div id="info2-text2"
+                                    class="text-[.875em] md:text-[17px] lg:text-[.875em] w-fit font-[100] leading-[1.3] text-[#71706fc0]">
+                                    Environment</div>
+                            </div>
+                        </a>
+                        <div id="featured-border2"
+                            class="border-solid lg:border-b-[1.5px] border-[#CCC7C0] relative z-[-1]"></div>
+                    </div>
+                    <div id="featured-item3"
+                        class=" img w-fit h-fit lg:w-auto relative overflow-hidden before:bg-[#FF9831] before:z-[-1] before:absolute before:top-0 before:h-[0px] before:hover:h-[15vw] before:w-screen before:transition-all before:duration-300 before:ease-in-out lg:before:flex before:hidden"
+                        data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/6606dcc1c344d6007601cd83_IMG_0892.JPG"
+                        data-link="https://www.sundown-studio.com/projects/7pm-in-brooklyn">
+                        <a href="https://www.sundown-studio.com/projects/7pm-in-brooklyn"
+                            class="flex flex-col  lg:flex-row lg:justify-between lg:px-[2em] lg:py-[1.20em]">
+                            <div id="featured-visual3-wrapper"
+                                class="h-[122vw] min-[479px]:h-[57vw] w-fit pb-[1.5em] lg:hidden">
+                                <div id="featured-visual3" class=" object-cover h-[114vw] min-[479px]:h-[53vw]">
+                                    <div id="featured-visual3-video3">
+                                        <video playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true"
+                                            data-object-fit="cover"
+                                            class="h-[114vw] min-[479px]:h-[53vw] rounded-[1em] object-cover">
+                                            <source
+                                                src="https://player.vimeo.com/progressive_redirect/playback/928793354/rendition/1080p/file.mp4?loc=external&amp;signature=70f8634d25c34b3de7e26d9300daee81a85bd2271daf5eb907af88fbcf168217"
+                                                data-wf-ignore="true">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="featured-item3-text" class="w-fit">
+                                <div id="item3-text"
+                                    class="text-[1.7em] relative z-[-1]  md:text-[35px] lg:text-[4vw] xl:text-[3.5vw] font-bold  leading-[1.2] tracking-[-.03em] min-[479px]:tracking-[-0.044em] h-fit w-fit">
+                                    Carmelo Anthony 7pm In Brooklyn Set</div>
+                            </div>
+                            <div id="featured-info3" class="pt-[.5em] inline-block w-fit lg:flex flex-col items-end">
+                                <div id="info3-text1"
+                                    class="text-[.850em] md:text-[17px] lg:text-[.875em] leading-[1.4] font-[500] w-fit">
+                                    Wave Sports
+                                    Entertainment</div>
+                                <div id="info3-text2"
+                                    class="text-[.875em] md:text-[17px] lg:text-[.875em] font-[100] leading-[1.3] text-[#71706fc0] w-fit">
+                                    Environment</div>
+                            </div>
+                        </a>
+                        <div id="featured-border3"
+                            class="border-solid lg:border-b-[1.5px] border-[#CCC7C0] relative z-[-1]"></div>
+                    </div>
+                    <div id="featured-item4"
+                        class="img w-fit h-fit lg:w-auto relative overflow-hidden before:bg-[#FF9831] before:z-[-1] before:absolute before:top-0 before:h-[0px] before:hover:h-[15vw] before:w-screen before:transition-all before:duration-300 before:ease-in-out lg:before:flex before:hidden"
+                        data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b163d_Copy%20of%20DSC04086.webp"
+                        data-link="https://www.sundown-studio.com/projects/converse-soho-2023">
+                        <a href="https://www.sundown-studio.com/projects/converse-soho-2023"
+                            class="flex flex-col relative  lg:flex-row lg:justify-between lg:px-[2em] lg:py-[1.20em]">
+                            <div id="featured-visual4-wrapper"
+                                class="h-[122vw] min-[479px]:h-[57vw] w-fit pb-[1.5em] lg:hidden">
+                                <div id="featured-visual4" class=" object-cover h-[114vw] min-[479px]:h-[53vw]">
+                                    <div id="featured-visual4-video4">
+                                        <video playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true"
+                                            data-object-fit="cover"
+                                            class="h-[114vw] min-[479px]:h-[53vw] rounded-[1em] object-cover">
+                                            <source
+                                                src="https://player.vimeo.com/progressive_redirect/playback/915351830/rendition/1080p/file.mp4?loc=external&amp;signature=e7d354029600a9d8a23b7bc16881789f86324b78b5f5f7d042e0f6085ff7f9f5"
+                                                data-wf-ignore="true">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="featured-item4-text" class="w-fit">
+                                <div id="item4-text"
+                                    class=" text-[1.7em] relative z-[-1] md:text-[35px] lg:text-[4vw] xl:text-[3.5vw] h-fit font-bold w-fit  leading-[1.2] tracking-[-.03em]">
+                                    Converse SoHo</div>
+                            </div>
+                            <div id="featured-info4" class="pt-[.5em] inline-block w-fit lg:flex flex-col items-end">
+                                <div id="info4-text1"
+                                    class="text-[.850em] md:text-[17px] lg:text-[.875em] leading-[1.4] font-[500] w-fit">
+                                    Converse
+                                </div>
+                                <div id="info4-text2"
+                                    class="text-[.875em] md:text-[17px] lg:text-[.875em] font-[100] leading-[1.3] text-[#71706fc0] w-fit">
+                                    Environment</div>
+                            </div>
+                        </a>
+                        <div id="featured-border4"
+                            class="border-solid lg:border-b-[1.5px] border-[#CCC7C0] relative z-[-1]"></div>
+                    </div>
+                    <div id="featured-item5"
+                        class="img w-fit h-fit lg:w-auto relative overflow-hidden before:bg-[#FF9831] before:z-[-1] before:absolute before:top-0 before:h-[0px] before:hover:h-[15vw] before:w-screen before:transition-all before:duration-300 before:ease-in-out lg:before:flex before:hidden"
+                        data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b170d_AM704059.webp">
+                        <a href="https://www.sundown-studio.com/projects/afterpay-nyfw-popup"
+                            class="flex flex-col relative  lg:flex-row lg:justify-between lg:px-[2em] lg:py-[1.20em]">
+                            <div id="featured-visual5-wrapper"
+                                class="h-[122vw] min-[479px]:h-[57vw] w-fit pb-[1.5em] lg:hidden">
+                                <div id="featured-visual5" class=" object-cover h-[114vw] min-[479px]:h-[53vw]">
+                                    <div id="featured-visual5-video5">
+                                        <video playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true"
+                                            data-object-fit="cover"
+                                            class="h-[114vw] min-[479px]:h-[53vw] rounded-[1em] object-cover">
+                                            <source
+                                                src="https://player.vimeo.com/progressive_redirect/playback/915351644/rendition/1080p/file.mp4?loc=external&amp;signature=633b6a76ba79686a8014f09817443ad82e5ef348e4a81467eb9f8610c6410f50"
+                                                data-wf-ignore="true">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="featured-item5-text" class="w-fit">
+                                <div id="item5-text"
+                                    class=" text-[1.7em] relative z-[-1] md:text-[35px] lg:text-[4vw] xl:text-[3.5vw] font-bold h-fit w-fit  leading-[1.2] tracking-[-.03em]">
+                                    NYFW Popup</div>
+                            </div>
+                            <div id="featured-info5" class="pt-[.5em] inline-block w-fit lg:flex flex-col items-end">
+                                <div id="info5-text1"
+                                    class="text-[.850em] md:text-[17px] lg:text-[.875em] leading-[1.4] font-[500] w-fit">
+                                    Afterpay
+                                </div>
+                                <div id="info5-text2"
+                                    class="text-[.875em] md:text-[17px] lg:text-[.875em] font-[100] leading-[1.3] text-[#71706fc0] w-fit">
+                                    Environment</div>
+                            </div>
+                        </a>
+                        <div id="featured-border5"
+                            class="border-solid lg:border-b-[1.5px] border-[#CCC7C0] relative z-[-1]"></div>
+                    </div>
+                    <div id="featured-item6"
+                        class="img w-fit h-fit lg:w-auto relative overflow-hidden before:bg-[#FF9831] before:z-[-1] before:absolute before:top-0 before:h-[0px] before:hover:h-[15vw] before:w-screen before:transition-all before:duration-300 before:ease-in-out lg:before:flex before:hidden"
+                        data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388-p-800.webp"
+                        data-link="https://www.sundown-studio.com/projects/nike-makers-studio-hoi">
+                        <a href="https://www.sundown-studio.com/projects/nike-makers-studio-hoi"
+                            class="flex flex-col relative  lg:flex-row lg:justify-between lg:px-[2em] lg:py-[1.20em]">
+                            <div id="featured-visual6-wrapper"
+                                class="h-[122vw] min-[479px]:h-[57vw] w-fit pb-[1.5em] lg:hidden">
+                                <div id="featured-visual6" class=" object-cover h-[114vw] min-[479px]:h-[53vw]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388-p-800.webp"
+                                        class="h-[114vw] min-[479px]:h-[53vw] rounded-[1em] object-cover" loading="lazy"
+                                        alt="Makers Studio HOI.img">
+                                    <!-- <div id="featured-visual6-video6">
+                                        <video playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true"
+                                            data-object-fit="cover" class="h-[114vw] rounded-[1em] object-cover">
+                                            <source
+                                                src="https://player.vimeo.com/progressive_redirect/playback/915351644/rendition/1080p/file.mp4?loc=external&amp;signature=633b6a76ba79686a8014f09817443ad82e5ef348e4a81467eb9f8610c6410f50"
+                                                data-wf-ignore="true">
+                                        </video>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div id="featured-item6-text" class="w-fit">
+                                <div id="item6-text"
+                                    class=" text-[1.7em] relative z-[-1] md:text-[35px] lg:text-[4vw] xl:text-[3.5vw] font-bold h-fit w-fit  leading-[1.2] tracking-[-.03em]">
+                                    Makers Studio HOI</div>
+                            </div>
+                            <div id="featured-info6" class="pt-[.5em] inline-block w-fit lg:flex flex-col items-end">
+                                <div id="info6-text1"
+                                    class="text-[.850em] md:text-[17px] lg:text-[.875em] leading-[1.4] font-[500] w-fit">
+                                    NIKE</div>
+                                <div id="info6-text2"
+                                    class="text-[.875em] md:text-[17px] lg:text-[.875em] font-[100] leading-[1.3] text-[#71706fc0] w-fit">
+                                    Environment</div>
+                            </div>
+                        </a>
+                        <div id="featured-border6"
+                            class="border-solid lg:border-b-[1.5px] border-[#CCC7C0] relative z-[-1]"></div>
+
+                    </div>
+                    <div id="featured-item7"
+                        class="img w-fit h-it lg:w-auto relative overflow-hidden before:bg-[#FF9831] before:z-[-1] before:absolute before:top-0 before:h-[0px] before:hover:h-[15vw] before:w-screen before:transition-all before:duration-300 before:ease-in-out lg:before:flex before:hidden"
+                        data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/660ae7135f66e3791d6fd323_Copy-of-Copy-of-KelceHouseParty_Wave_LutherRedd-04906.jpg"
+                        data-link="https://www.sundown-studio.com/projects/kelce-super-bowl-party">
+                        <a href="https://www.sundown-studio.com/projects/kelce-super-bowl-party"
+                            class="flex flex-col relative  lg:flex-row lg:justify-between lg:px-[2em] lg:py-[1.20em]">
+                            <div id="featured-visual7-wrapper"
+                                class="h-[122vw] min-[479px]:h-[57vw] w-fit pb-[1.5em] lg:hidden">
+                                <div id="featured-visual7" class=" object-cover h-[114vw] min-[479px]:h-[53vw]">
+                                    <div id="featured-visual7-video7">
+                                        <video playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true"
+                                            data-object-fit="cover"
+                                            class="h-[114vw] min-[479px]:h-[53vw] rounded-[1em] object-cover">
+                                            <source
+                                                src="https://player.vimeo.com/progressive_redirect/playback/928816922/rendition/1080p/file.mp4?loc=external&amp;signature=d7911550abbaf7f6262fe43259314ac568a6e1be60cf0d3c7dc711030a81c8de"
+                                                data-wf-ignore="true">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="featured-item7-text" class="w-fit">
+                                <div id="item7-text"
+                                    class=" text-[1.7em] md:text-[35px] lg:text-[4vw] xl:text-[3.5vw] font-bold h-fit w-fit  leading-[1.2] tracking-[-.03em]">
+                                    Kelce Super Bowl Party</div>
+                            </div>
+                            <div id="featured-info7" class="pt-[.5em] inline-block w-fit lg:flex flex-col items-end">
+                                <div id="info7-text1"
+                                    class="text-[.850em] md:text-[17px] lg:text-[.875em] leading-[1.4] font-[500] w-fit">
+                                    Wave Sports
+                                    Entertainment</div>
+                                <div id="info7-text2"
+                                    class="text-[.875em] md:text-[17px] lg:text-[.875em] font-[100] leading-[1.3] text-[#71706fc0] w-fit">
+                                    Environment</div>
+                            </div>
+                        </a>
+                        <div id="featured-border7"
+                            class="border-solid lg:border-b-[1.5px] border-[#CCC7C0] relative z-[-1]"></div>
+                    </div>
+                    <div id="featured-item8"
+                        class="img w-fit h-fit lg:w-auto relative overflow-hidden before:bg-[#FF9831] before:z-[-1] before:absolute before:top-0 before:h-[0px] before:hover:h-[15vw] before:w-screen before:transition-all before:duration-300 before:ease-in-out lg:before:flex before:hidden"
+                        data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1698_Nike_Soho_Play-New-Kids_10-27-21_1950.webp"
+                        data-link="https://www.sundown-studio.com/projects/nike-play-new-kidvision">
+                        <a href="https://www.sundown-studio.com/projects/nike-play-new-kidvision"
+                            class="flex flex-col relative  lg:flex-row lg:justify-between lg:px-[2em] lg:py-[1.20em]">
+                            <div id="featured-visual8-wrapper"
+                                class="h-[122vw] min-[479px]:h-[57vw] w-fit pb-[1.5em] lg:hidden">
+                                <div id="featured-visual8" class=" object-cover h-[114vw] min-[479px]:h-[53vw]">
+                                    <!-- <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388-p-800.webp"
+                                        class="h-[114vw] rounded-[1em] object-cover" loading="lazy"> -->
+                                    <div id="featured-visual8-video8">
+                                        <video playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true"
+                                            data-object-fit="cover"
+                                            class="h-[114vw] min-[479px]:h-[53vw] rounded-[1em] object-cover">
+                                            <source
+                                                src="https://player.vimeo.com/progressive_redirect/playback/915352051/rendition/1080p/file.mp4?loc=external&amp;signature=259968d8504f49abbda9f99a6b37b979af752097d338252bed55f788b60b4c98"
+                                                data-wf-ignore="true">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="featured-item8-text" class="w-fit">
+                                <div id="item8-text"
+                                    class=" text-[1.7em] relative z-[-1] md:text-[35px] lg:text-[4vw] xl:text-[3.5vw] font-bold h-fit w-fit  leading-[1.2] tracking-[-.03em]">
+                                    Play New Kidvision</div>
+                            </div>
+                            <div id="featured-info8" class="pt-[.5em] inline-block w-fit lg:flex flex-col items-end">
+                                <div id="info8-text1"
+                                    class="text-[.850em] md:text-[17px] lg:text-[.875em] leading-[1.4] font-[500] w-fit">
+                                    NIKE</div>
+                                <div id="info8-text2"
+                                    class="text-[.875em] md:text-[17px] lg:text-[.875em] font-[100] leading-[1.3] text-[#71706fc0] w-fit">
+                                    Environment</div>
+                            </div>
+                        </a>
+                        <div id="featured-border8"
+                            class="border-solid lg:border-b-[1.5px] border-[#CCC7C0] relative z-[-1]"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="button-wrapper" class="px-[1.25em] min-[479px]:px-[2em] relative top-[6em]">
+                <a class="flex items-center justify-between absolute w-[167px] bottom-0 mx-1 border-solid border-[1px] border-[#CCC7C0] rounded-3xl cursor-pointer px-5 py-2  z-[3] hover:text-white overflow-hidden transition-all duration-500 ease-in-out before:rounded-3xl before:bg-black before:h-[0px] before:hover:h-[40px] before:hover:w-screen before:w-[0px] before:absolute before:bottom-0 before:left-0 before:z-[-1] before:transition-all before:duration-500 before:ease-in-out"
+                    href="https://www.sundown-studio.com/work">
+                    <div id="button-text">All Projects</div>
+                    <div id="button-arrow">
+                        <svg width="33" height="10" viewBox="0 0 33 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5H31" stroke="currentColor" stroke-linecap="square"></path>
+                            <path d="M28.5 1.5L32 5L28.5 8.5" stroke="currentColor" stroke-linecap="square"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="service-section" class="mt-[4.5em] min-[479px]:mt-[11.5em] relative lg:z-[0]">
+            <div id="service-container" class="px-[1.25em] min-[479px]:px-[2em] relative">
+                <div id="service-wrapper">
+                    <div id="service"
+                        class="bg-[#0b0500] rounded-[1.25em] w-auto h-fit md:flex md:flex-col md:justify-center md:h-[53vw]">
+                        <div id="services-menu"
+                            class="pt-[3em] px-[1.25em] leading-[1]  flex flex-col items-center w-[100%] md:w-[45%] md:px-0 md:pt-0"
+                            role="tablist">
+                            <a role="tab"
+                                class="border-l-[3px] border-solid border-[#FE330A] flex flex-row w-[100%] max-w-[21em] md:max-w-[20.75em] md:w-[16em] lg:w-[100%]"
+                                aria-selected="true" target="_top">
+                                <div id="service1"
+                                    class="text-[2.55em] min-[479px]:text-[2.18em] md:text-[calc(2.2em+2.3vw)] cursor-pointer text-[#efeae3] font-semibold pl-[0.4em] leadng-[1] w-fit">
+                                    Design
+                                </div>
+                            </a>
+                            <a role="tab"
+                                class="border-l-[3px]  border-solid border-[#504A45] flex flex-row w-[100%] max-w-[21em] md:max-w-[20.75em] md:w-[16em] lg:w-[100%]"
+                                aria-selected="false">
+                                <div id="service2"
+                                    class="text-[2.55em] min-[479px]:text-[2.18em] md:text-[calc(2.2em+2.3vw)] cursor-pointer text-[#efeae3] visited:text-[#EFEAE3] pl-[0.4em] font-semibold leadng-[1] opacity-[.3]">
+                                    Project
+                                </div>
+                            </a>
+                            <a role="tab"
+                                class="border-l-[3px]  border-solid border-[#504A45] flex flex-row w-[100%] max-w-[21em] md:max-w-[20.75em] md:w-[16em] lg:w-[100%]"
+                                aria-selected="false">
+                                <div id="service3"
+                                    class="text-[2.55em] min-[479px]:text-[2.18em] cursor-pointer md:text-[calc(2.2em+2.3vw)] text-[#efeae3] visited:text-[#EFEAE3] pl-[0.4em] font-semibold leadng-[1] opacity-[.3]">
+                                    Execution
+                                </div>
+                            </a>
+                        </div>
+                        <div id="services-tabs-contents" class="mt-[2em] ">
+                            <div id="tab-1" role="tabpanel" class="block opacity-1 lg:mt-[2em]">
+                                <div id="services-tab-1" class="flex gap-y-[2.5em] flex-col items-center md:flex-row">
+                                    <div id="services-content-wrapper1"
+                                        class="px-[1.25em] md:flex md:w-[45%] md:justify-center md:px-0">
+                                        <div id="services-content1"
+                                            class="max-w-[21em] md:max-h-[12em] md:max-w-[16em] lg:max-w-[20.75em] md:tracking-[-0.01em]">
+                                            <p
+                                                class="text-[#EFEAE3] lg:text-[calc(0.64em+0.40vw)] text-[.9em] leading-[1.3]">
+                                                Our team works with our
+                                                clients to refine an idea and concept into an
+                                                executable design. We create a final design that encompasses the brand
+                                                narrative to bring stories to life and provide end-to-end design
+                                                solutions
+                                                from concept, design, and architectural drawings to 3D renderings.</p>
+                                        </div>
+                                    </div>
+                                    <div id="services-images-wrapper1"
+                                        class="pt-[100%] relative rounded-[1.25em] overflow-hidden w-[100%] md:h-[53vw] md:w-[51.1%] md:absolute md:top-0 md:right-[2em] md:pt-0">
+                                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project.webp"
+                                            class="services-images absolute left-0 top-0 bottom-0 right-0 rounded-[1.25em] h-[98vw] w-fit object-cover md:h-[53vw] transition-transform duration-[800ms] will-change-transform"
+                                            alt="news_section.img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" role="tabpanel" class="hidden opacity-0 lg:mt-[2em]" data-scroll>
+                                <div id="services-tab-2" class="flex gap-y-[2.5em] flex-col items-center md:flex-row">
+                                    <div id="services-content-wrapper2"
+                                        class="px-[1.25em] md:flex md:w-[45%] md:justify-center md:px-0">
+                                        <div id="services-content2"
+                                            class="max-w-[21em] md:max-h-[12em] md:max-w-[16em] lg:max-w-[20.75em]">
+                                            <p
+                                                class="text-[#EFEAE3] text-[.9em] lg:text-[calc(0.64em+0.40vw)] leading-[1.3]">
+                                                Once we have a
+                                                design, our production team takes the lead in bringing it to life.
+                                                We manage all stages of the project, from build specifications and
+                                                technical drawings to site surveys, vendor management, and 2D &amp;
+                                                3D production. We have an extensive network of partners to meet each
+                                                unique design and project need.</p>
+                                        </div>
+                                    </div>
+                                    <div id="services-images-wrapper2"
+                                        class="pt-[100%] relative rounded-[1.25em] overflow-hidden w-[100%] md:h-[53vw] md:w-[51.1%] md:absolute md:top-0 md:right-[2em] md:pt-0">
+                                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d0_Project.webp"
+                                            class="services-images absolute bottom-0 top-0 left-0 right-0 rounded-[1.25em] h-[98vw] md:h-[53vw] w-fit object-cover will-change-transform transition-transform duration-[800ms]"
+                                            alt="product_section.img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" role="tabpanel" class="hidden opacity-0 lg:mt-[2em]">
+                                <div id="services-tab-3" class="flex gap-y-[2.5em] flex-col items-center md:flex-row">
+                                    <div id="services-content-wrapper3"
+                                        class="px-[1.25em] md:flex md:w-[45%] md:justify-center md:px-0">o
+
+                                        <div id="services-content3"
+                                            class="max-w-[21em] md:max-h-[12em] md:max-w-[16em] lg:max-w-[20.75em]">
+                                            <p
+                                                class="text-[#EFEAE3] text-[.9em] lg:text-[calc(0.64em+0.40vw)] leading-[1.3]">
+                                                We’re with you every
+                                                step of the way, from the project initiation to launch day. Our
+                                                production and design teams are onsite to direct and guide the process
+                                                down to the last point of completion, ensuring success across the built
+                                                space and experience.</p>
+                                        </div>
+                                    </div>
+                                    <div id="services-images-wrapper3"
+                                        class="pt-[100%] relative rounded-[1.25em] overflow-hidden w-[100%] md:h-[53vw] md:w-[51.1%] md:absolute md:top-0 md:right-[2em] md:pt-0">
+                                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15cd_Execution.webp"
+                                            class="services-images absolute top-0 left-0 bottom-0 right-0 rounded-[1.25em] h-[98vw] md:h-[53vw] w-fit object-cover will-change-transform transition-transform duration-[800ms]"
+                                            alt="Experience_section.img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients-section" class="h-fit mt-[6.45em] pb-[6.45em] lg:mt-[8.75em] lg:pb-[8.75em] relative">
+            <div id="clients-container" class="relative h-fit">
+                <div id="client-header"
+                    class="pb-[4em] flex items-center gap-x-[.6em] px-[1.25em] min-[479px]:px-[2em] md:px-[4.5em] lg:px-[5.625em]">
+                    <div id="client-red-dot"
+                        class="h-[.5em] w-[.5em] lg:h-[calc(0.29vw+4px)] lg:w-[calc(0.28vw+4px)] bg-[#fe330a] rounded-full">
+                    </div>
+                    <h2 id="client-text"
+                        class="text-[14px] min-[479px]:text-[12px] lg:text-[calc(0.480em+0.425vw)] tracking-[-.03em] opacity-[0.8] ">
+                        WHO
+                        WE WORK WITH</h2>
+                </div>
+                <div id="swapper-main-component" class="relative h-fit cursor-none">
+                    <div class="swiper-backface-hidden swiper-fade swiper-free-mode swiper-horizontal">
+                        <div class="flex relative h-[100%] w-[100%] overflow-auto" style="scrollbar-width:none;">
+                            <div
+                                class="swiper-slide mr-[10%] md:mr-[9%] max-w-[62%] md:max-w-[37.5%] lg:max-w-[25.1%] pl-[1.25em] min-[479px]:pl-[2em] md:pl-[4.5em] lg:pl-[5.625em] snap-center relative z-[-2]">
+                                <div id="slider-main-wrapper1"
+                                    class=" pl-[1.5em] border-l-[1px] border-solid border-[#27272748]  flex flex-col gap-[1.5em]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15ff_Nike.svg"
+                                        loading="lazy" alt="Nike"
+                                        class="w-[8.7em] lg:w-[calc(5em+5.55vw)] object-cover">
+                                    <div id="slider-text" class="">
+                                        <p
+                                            class="text-[14px] lg:text-[calc(0.59em+0.440vw)] font-[500] leading-[1.4] tracking-[-.05em] opacity-[0.7]">
+                                            Retained
+                                            Production support across retail and events in NY, CHI, LA. Creative
+                                            Design, Design Management, Production/Project Management, and execution of
+                                            work from concept to installation across the Country.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide mr-[10%] md:mr-[9%] max-w-[56%] min-[479px]:max-w-[55.42%] md:max-w-[28.13%] lg:max-w-[18.08%] relative z-[-2]">
+                                <div id="slider-main-wrapper2"
+                                    class=" pl-[1.5em] border-l-[1px] border-solid border-[#27272748] flex flex-col gap-[1.5em]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1600_Converse.svg"
+                                        loading="lazy" alt="Converse"
+                                        class="w-[8.7em] lg:w-[calc(5em+5.55vw)] object-cover">
+                                    <div id="slider-text2" class="">
+                                        <p
+                                            class="text-[14px] lg:text-[calc(0.59em+0.440vw)] font-[500] leading-[1.4] tracking-[-.05em] opacity-[0.7]">
+                                            Creative
+                                            Concepting, Design, Design Management, Project Management, and execution of
+                                            work from concept to installation across the Country. Cross functional
+                                            communication and management of third party partners.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide mr-[10%] md:mr-[9%] max-w-[56%] min-[479px]:max-w-[55.42%] md:max-w-[28.13%] lg:max-w-[18.08%] relative z-[-2]">
+                                <div id="slider-main-wrapper3"
+                                    class=" pl-[1.5em] border-l-[1px] border-solid border-[#27272748] flex flex-col gap-[1.5em]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/660eb758d7f9942fd6b69202_the-north-face-1-logo-png-transparent.png"
+                                        class="w-[8.7em] lg:w-[calc(5em+5.55vw)] object-cover" loading="lazy"
+                                        alt="The north face">
+                                    <div id="slider-text3">
+                                        <p
+                                            class="text-[14px] lg:text-[calc(0.59em+0.440vw)] font-[500] leading-[1.4] tracking-[-.05em] opacity-[0.7]">
+                                            Creative
+                                            Concepting, 2D &amp;&nbsp;3D Design, Design Management for work in
+                                            NYC&nbsp;and across the country.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide mr-[10%] md:mr-[9%] max-w-[56%] min-[479px]:max-w-[55.42%] md:max-w-[28.13%] lg:max-w-[18.08%] relative z-[-2]">
+                                <div id="slider-main-wrapper4"
+                                    class=" pl-[1.5em] border-l-[1px] border-solid border-[#27272748] flex flex-col gap-[1.5em]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fd_Arc%E2%80%99teryx.svg"
+                                        class="w-[8.7em] lg:w-[calc(5em+5.55vw)] object-cover" loading="lazy"
+                                        alt="Arc'Teryx">
+                                    <div id="slider-text4">
+                                        <p
+                                            class="text-[14px] lg:text-[calc(0.59em+0.440vw)] font-[500] leading-[1.4] tracking-[-.05em] opacity-[0.7]">
+                                            Production and
+                                            design along with install oversight and execution support for the SoHo store
+                                            opening on Broadway St, New York. Also working on creative and production
+                                            work for a new store opening in Glendale, California.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide mr-[10%] md:mr-[9%] max-w-[56%] min-[479px]:max-w-[55.42%] md:max-w-[28.13%] lg:max-w-[18.08%] relative z-[-2]">
+                                <div id="slider-main-wrapper5"
+                                    class=" pl-[1.5em] border-l-[1px] border-solid border-[#27272748] flex flex-col gap-[1.5em]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fe_Hunter.svg"
+                                        class="w-[8.7em] lg:w-[calc(5em+5.55vw)] object-cover" loading="lazy"
+                                        alt="Hunter">
+                                    <div id="slider-text5">
+                                        <p
+                                            class="text-[14px] lg:text-[calc(0.59em+0.440vw)] font-[500] leading-[1.4] tracking-[-.05em] opacity-[0.7]">
+                                            Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom
+                                            57th St, New York, including activations in Women’s, Men’s and Kid’s zones.
+                                            Thirty-five (35) additional smaller take-downs in Nordstrom stores across
+                                            the US. Concept design for Holiday boot customization events in stores
+                                            across winter 2022.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide mr-[10%] md:mr-[9%] max-w-[56%] min-[479px]:max-w-[55.42%] md:max-w-[28.13%] lg:max-w-[18.08%] relative z-[-2]">
+                                <div id="slider-main-wrapper6"
+                                    class=" pl-[1.5em] border-l-[1px] border-solid border-[#27272748] flex flex-col gap-[1.5em]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1601_MediaLink.svg"
+                                        class="w-[8.7em] lg:w-[calc(5em+5.55vw)] object-cover" loading="lazy"
+                                        alt="The north face">
+                                    <div id="slider-text6">
+                                        <p
+                                            class="text-[14px] lg:text-[calc(0.59em+0.440vw)] font-[500] leading-[1.4] tracking-[-.05em] opacity-[0.7]">
+                                            Creative, Design, and Production Partner for 2023 CES. Scope Included
+                                            creation of Branding Identity, Assets, and Digital Content, Design,
+                                            Production design, Production oversight and Installation of client
+                                            activations for IBM, Delta, Instacart, and more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide max-w-[62%] md:max-w-[37.5%] lg:max-w-[25.1%] pr-[1.25em] min-[479px]:pr-[2em] md:pr-[4.5em] lg:pr-[5.625em] relative z-[-2]">
+                                <div id="slider-main-wrapper7"
+                                    class=" pl-[1.5em] border-l-[1px] border-solid border-[#27272748] flex flex-col gap-[1.5em]">
+                                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1602_AfterPay.svg"
+                                        class="w-[8.7em] lg:w-[calc(5em+5.55vw)] object-cover" loading="lazy"
+                                        alt="The north face">
+                                    <div id="slider-text7">
+                                        <p
+                                            class="text-[14px] lg:text-[calc(0.59em+0.440vw)] font-[500] leading-[1.4] tracking-[-.05em] opacity-[0.7]">
+                                            Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up
+                                            space. In Partnership with B-Reel scope including creation of Final Design,
+                                            Design Assets, 3D Renders, Production design, Production/Partner oversight
+                                            and creation of a two (2) story pop-up for Afterpay’s clients such as Crocs,
+                                            JD Sports, Container Store, [&] Revolve.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <i
+                        class="ri-expand-left-right-line text-[1.7vw] bg-[#FE330A] text-[#EFEAE3] rounded-full px-[0vw] py-[0vw] hidden text-center fixed z-[-1] translate-x-[-50%] translate-y-[-50%] transition-all duration-[100ms] ease-linear opacity-[0]"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-[-100vh] relative  bg-black">
+        <div id="footer-spacer" class="h-[100vh]"></div>
+        <div id="footer-component" class="sticky bottom-0 overflow-hidden">
+            <div id="footer-component-container"
+                class="px-[1.25em] min-[479px]:px-[2em] md:px-[4.5em] lg:px-[5.625em] md:pl-[3em] md:pr-[4.5em] lg:flex items-center h-[100%]">
+                <div id="footer-component-content"
+                    class="mt-[6.5em] flex flex-col min-[479px]:flex-row min-[479px]:mt-[6.25em] md:mt-[11.25em] gap-[2em] max-w-[100%] w-[100%] relative z-[10] min-[479px]:gap-0 min-[479px]:justify-between lg:items-end">
+                    <div id="footer-menu-wrapper" class="text-[#EFEAE3] flex flex-col gap-[.75em]">
+                        <a href="https://www.sundown-studio.com/work"
+                            class="text-[28px] lg:text-[calc(1.12em+0.96vw)] leading-[1] font-semibold lg:hover:opacity-[.7]">Work</a>
+                        <a href="https://www.sundown-studio.com/studio"
+                            class="text-[28px] lg:text-[calc(1.12em+0.96vw)] leading-[1] font-semibold lg:hover:opacity-[.7]">Studio</a>
+                        <a href="https://www.sundown-studio.com/contact"
+                            class="text-[28px] lg:text-[calc(1.12em+0.96vw)] leading-[1] font-semibold lg:hover:opacity-[.7]">Contact</a>
+                    </div>
+                    <div id="newsletter-wrapper" class="flex gap-[1.75em] flex-col">
+                        <div id="newsletter-heading-wrapper"
+                            class="max-w-[20em] min-[479px]:max-w-[17.5em] lg:max-w-[calc(6em+14vw)]">
+                            <p
+                                class="text-[#EFEAE3] leading-[1.3] font-medium text-[18px] min-[479px]:text-[20px] md:text-[18px] lg:text-[calc(0.6em+0.74vw)] tracking-[-.6px]">
+                                Get industry insights and
+                                creative inspiration straight to your inbox.</p>
+                        </div>
+                        <div id="form-wrapper" class="w-[100%]">
+                            <div id="form-block" class="mb-[15px] lg:mb-0">
+                                <form id="email-form" method="get" name="email-form"
+                                    class="border-b-[1px] border-b-solid border-b-[#EFE9E2] flex items-center border-opacity-[.3]">
+                                    <input type="email" placeholder="Email address" maxlength="250" name="email2"
+                                        required autocomplete="email"
+                                        class="bg-transparent text-[#EFEAE3] border-none outline-none py-[1em] text-[14px] leading-[1.4] font-medium h-[38px] w-[100%] placeholder:text-[white]">
+                                    <input type="submit" value="submit"
+                                        class="bg-[url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c5_Form%20Button.svg')] w-[1.75em] bg-scroll bg-auto bg-no-repeat text-transparent leading-[1] cursor-pointer">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-logo"
+                class="mt-[2em] min-[479px]:mt-[6.25em] px-[1.25em] min-[479px]:px-[2em] w-[100%] relative">
+                <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c6_Footer%20Logo.svg"
+                    class="object-cover w-[100%] h-[100%]" loading="lazy" alt="footer-logo">
+            </div>
+            <div id="footer-links" class="mt-[2.5em] px-[1.25em] min-[479px]:px-[2em]">
+                <div id="footer-line-break" class="h-[1px] w-[100%] bg-[#EFE9E2] opacity-[.3]"></div>
+                <div id="footer-links-wrapper"
+                    class="my-[1.75em] flex gap-[.75em] flex_flow justify-between relative z-[10]">
+                    <div id="footer-copyright" class="w-fit h-fit">
+                        <p
+                            class=" text-[#EFEAE3] text-[14px] lg:text-[calc(0.53em+0.520vw)] leading-[1.4] min-[479px]:tracking-[-.417px] font-normal">
+                            Copyright © Sundown Studio</p>
+                    </div>
+                    <div id="footer-locations" class="flex gap-[.375em] w-fit h-fit">
+                        <div id="location-icon" class="w-[1.25em] h-[1.25em]">
+                            <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15cb_Globe.svg"
+                                loading="lazy" alt="location" class=" object-cover">
+                        </div>
+                        <p
+                            class=" text-[#EFEAE3] text-[14px] lg:text-[calc(0.53em+0.520vw)] leading-[1.4] min-[479px]:tracking-[-.417px] font-normal">
+                            Brooklyn, NY</p>
+                    </div>
+                    <div id="footer-socials1" class="w-fit h-fit min-[479px]:flex">
+                        <a href="https://www.instagram.com/sundown_stdio/?hl=en" target="_blank" rel="noopener"
+                            class="text-[#EFEAE3] text-[14px] lg:text-[calc(0.53em+0.520vw)] leading-[1.4] min-[479px]:tracking-[-.417px] font-normal relative before:absolute before:left-0 before:bottom-[-0.1em] before:bg-[white] before:w-[100%] before:h-[calc(0.04em+0.04vw)] before:z-[10] before:scale3d_1 before:origin-right before:hover:origin-left before:hover:scale3d_2 before:transition-transform before:duration-[0.5s] before:ease-in-out">Instagram</a>
+                    </div>
+                    <div id="footer-socials2" class="w-fit h-fit min-[479px]:flex">
+                        <a href="https://www.linkedin.com/company/sundown-studio-creative/" target="_blank"
+                            rel="noopener"
+                            class="text-[#EFEAE3] text-[14px] lg:text-[calc(0.53em+0.520vw)] leading-[1.4] min-[479px]:tracking-[-.417px] font-normal relative before:absolute before:left-0 before:bottom-0 before:bg-[white] before:w-[100%] before:h-[calc(0.04em+0.04vw)] before:z-[10] before:scale3d_1 before:origin-right before:hover:origin-left before:hover:scale3d_2 before:transition-transform before:duration-[0.5s] before:ease-in-out">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-gradient-wrapper" class="top-[-5em] absolute left-0 right-0 bottom-0 z-[1]">
+                <div id="footer-shape1"
+                    class="w-[99em] h-[28em] md:h-[24em] lg:h-[calc(13em+20vw)] lg:w-[calc(50em+60vw)] lg:top-[calc(5em-18vw)] lg:left-[calc(5em-26vw)] linear-gradient1 blur-[40px] absolute z-[4] top-[-17em] min-[479px]:top-[-13.5em] bg-[#ff9831] left-[-19em] rounded-full preserve_3d rotatez will-change-transform">
+                </div>
+                <div id="footer-shape2"
+                    class="w-[65em] h-[30em] min-[479px]:w-[77em] absolute right-[-42em] md:w-[87em] lg:w-[calc(45em+65vw)] lg:h-[calc(10em+35vw)] lg:top-[calc(8em-10vw)] md:right-[-44em] lg:right-[-55%] top-0 min-[479px]:top-[4em] md:top-0 z-[3] linear-gradient2 preserve_3d bg-[#ff9831] blur-[40px] rounded-full rotatez2">
+                </div>
+                <div id="footer-shape3"
+                    class="w-[6em] h-[33em] min-[479px]:w-[13em] min-[479px]:h-[35em] md:h-[28em] lg:h-[63%] lg:w-[calc(5em+10vw)] lg:right-[21em] absolute right-[13em] min-[479px]:right-[11em] md:right-[19em] top-[-5em] md:top-[-9em] lg:top-[-11vw] z-[2] preserve_3d bg-[#fe330a] blur-[40px] translate3d">
+                </div>
+                <div id="footer-shape4"
+                    class="w-[100%] h-[50%] absolute right-0 top-[4em] md:top-[6em] md:h-[46%] min-[479px]:top-[6.2em] lg:h-[44%] bottom-0 left-0 z-[1] bg-[#fe330a] linear-gradient3 blur-[40px] rotate-[7deg]">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="no-img-found" class="">
+        <div id="no-img-found-wrapper" class="bg-[#ddd] p-[10px]">
+            <div class="text-[14px] lg:text-[calc(0.53em+0.520vw)]">No items found.</div>
+        </div>
+    </div>
+    <div id="body_animation_wrapper" class="bg-[black] fixed top-0 w-[100vw] left-0 right-0 z-20 overflow-hidden">
+        <div id="body_animation"
+            class="relative h-[100vh] flex items-center justify-center text-[white] transition-[height] duration-[400ms] ease-in-out">
+            <div id="body_animation_text" class="absolute">
+                <div id="Environments"
+                    class="text-[#ff9831] text_fill bg-clip-text bg-[linear-gradient(200deg,#fe330a,#ff9831)] text-[2.25rem] md:text-[2.8rem] font-[600] hidden">
+                    Environments</div>
+                <div id="Experiences"
+                    class="text-[#ff9831] text_fill bg-clip-text bg-[linear-gradient(200deg,#fe330a,#ff9831)] text-[2.25rem] md:text-[2.8rem] font-[600] hidden">
+                    Experiences</div>
+                <div id="Contents"
+                    class="text-[#ff9831] text_fill bg-clip-text bg-[linear-gradient(200deg,#fe330a,#ff9831)] text-[2.25rem] md:text-[2.8rem] font-[600] hidden">
+                    Contents
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="sundown.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</body>
+
+</html>
