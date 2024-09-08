@@ -15,11 +15,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-[arial] bg-[#EFEAE3] overflow-x-hidden overflow-y-hidden bg-scroll relative">
+<body class=" font-[remixon] bg-[#EFEAE3] overflow-x-hidden overflow-y-hidden bg-scroll relative">
 
     <main class="bg-[#EFEAE3] relative z-[2]">
         <img src=" " id="fixed-img"
-            class="h-[31vw] bg-slate-500 w-[26vw] fixed top-[20%] right-[25%] rounded-[17px] object-cover hidden cursor-pointer opacity-100"
+            class="h-[31vw] bg-slate-500 w-[26vw] lg:opacity-[1] fixed top-[20%] right-[25%] rounded-[17px] object-cover hidden cursor-pointer opacity-0"
             alt="image">
         <header class="w-screen relative overflow-y-visible overflow-x-clip h-fit" id="page1">
             <nav class="w-screen h-[100px] pt-[25px] px-[3.5vw] flex justify-between items-center">
@@ -62,7 +62,7 @@
             <div id="home-content"
                 class="h-[440px] min-[479px]:h-[550px] md:h-[455px] lg:h-[47vw] relative xl:h-[44vw] w-screen flex flex-col-reverse md:flex-row md:items-end md:pb-14 justify-around md:justify-between mx-[20px] border-solid border-[#CCC7C0] border-b-2">
                 <div id="home-left-content"
-                    class="font-[700] text-[21px] lg:text-[1.75em] w-[300px] lg:w-[400px] lg:h-[3.75em] lg:pl-2 leading-[1] tracking-[-0.1vw] relative appear">
+                    class="font-[700] text-[21px] lg:text-[1.75em] w-[300px] lg:w-[400px] lg:h-[3.75em] lg:pl-2 leading-[1] tracking-[-0.1vw] relative">
                     Sundown is a multi-disciplinary studio focused on creating unique,
                     end-to-end experiences and environments.
                 </div>
@@ -84,8 +84,9 @@
                 </div>
             </div>
             <div id="home-hero-video-wrapper"
-                class="relative top-[40px] min-[479px]:top-[50px] max-w-[100vw] h-[120vw] min-[479px]:h-[55vw] flex justify-center">
-                <div id="home-hero-video" class="absolute z-[6] w-[100%] object-cover pl-[2.5vw] pr-[3.5vw]">
+                class="relative top-[40px] min-[479px]:top-[50px] max-w-[100vw] h-[120vw] min-[479px]:h-[55vw] flex justify-center ">
+                <div id="home-hero-video"
+                    class="absolute z-[6] w-[100%] object-cover px-[2.5vw] lg:pl-[2.5vw] lg:pr-[3.5vw]">
                     <video loop muted autoplay
                         class="h-[120vw] w-[100vw] rounded-[5vw] min-[479px]:rounded-[25px] object-cover min-[479px]:h-[55vw]">
                         <source
