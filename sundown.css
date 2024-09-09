@@ -27,12 +27,6 @@
   .linear-gradient3 {
     background: linear-gradient(to bottom, #fe330a, #0b0500);
   }
-  .scale3d_1 {
-    transform: scale3d(0, 1, 1);
-  }
-  .scale3d_2 {
-    transform: scale3d(1, 1, 1);
-  }
   .text_fill {
     -webkit-text-fill-color: transparent !important;
   }
